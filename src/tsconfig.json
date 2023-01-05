@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "ES6", //es6로 변환
+      "module": "commonjs", 
+      "strict": true, //모든 타입체킹 옵션 활성화
+      "esModuleInterop": true
+    }
+}
