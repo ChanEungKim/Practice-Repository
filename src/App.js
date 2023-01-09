@@ -9,6 +9,10 @@ const Button = styled.button`
   width: 200px;
   height: 200px;
   font-size: 100px;
+  @media ${props => props.theme.tablet} {
+    margin: 0 auto;
+    background-color: ${props => props.theme.mainColor}
+  }
 `
 
 function App() {
