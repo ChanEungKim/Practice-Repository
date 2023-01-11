@@ -14,6 +14,13 @@ const Button = styled.button`
     background-color: ${props => props.theme.mainColor}
   }
 `
+const Overflow = styled.div`
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  overflow-x: auto;
+`
 
 function App() {
   const [data , setData] = useState('');
@@ -34,6 +41,7 @@ function App() {
       <input
         value={data}
         onChange={e=> setData(e.target.value)}></input>
+      <Overflow>123213qwewqewqewqewqewqewqsadsadsadsadsadsadase</Overflow>
     </>
   );
 }
