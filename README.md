@@ -4,6 +4,8 @@
 2. Redux-toolkit // pages/state, pages/store
 3. 반응형 styled-components // style/global, style/theme
 4. 회원가입/주소찾기 - react-daum-postcode // pages/daumAddress
+   https://postcode.map.daum.net/guide
+5. favicon 변경 - public 파일에 favicon 파일 넣기 (이미지파일 favicon으로 변환해야한다.)
 
 CSS
 

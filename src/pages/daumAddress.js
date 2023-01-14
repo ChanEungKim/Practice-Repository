@@ -24,12 +24,20 @@ export const Postcode = () => {
     setIsOpenPost(false);
   };
 
+  const PostStyle = {
+    width: "100%",
+    // height: "500px",
+  };
+
   return (
     <>
       {isOpenPost && (
         <div onClick={onChageOpenPost}>
           <div>X</div>
-          <DaumPostcode onComplete={onCompletePost}></DaumPostcode>{" "}
+          <DaumPostcode
+            onComplete={onCompletePost}
+            style={PostStyle}
+          ></DaumPostcode>{" "}
           //onComplete에 데이터가 담겨온다
         </div>
       )}
