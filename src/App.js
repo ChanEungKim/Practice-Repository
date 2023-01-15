@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { change } from "./pages/state";
 import { useState } from "react";
 import { Postcode } from "./pages/daumAddress";
+import SVGicon from "./pages/SVGicon";
 
 const Button = styled.button`
   width: 100px;
@@ -21,6 +22,14 @@ const Overflow = styled.div`
   border: 1px solid black;
   overflow-y: scroll;
   overflow-x: auto;
+`;
+
+const SVGcontainer = styled.button`
+  width: 50px;
+  height: 50px;
+  svg {
+    fill: blue;
+  }
 `;
 
 function App() {
@@ -55,6 +64,9 @@ function App() {
       <input value={data} onChange={(e) => setData(e.target.value)}></input>
       <Overflow>123213qwewqewqewqewqewqewqsadsadsadsadsadsadase</Overflow>
       <Postcode></Postcode>
+      <SVGcontainer>
+        <SVGicon />
+      </SVGcontainer>
     </>
   );
 }

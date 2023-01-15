@@ -22,7 +22,10 @@ CSS
    justify-items : 하나의 grid에서의 변화
    //https://happygunja.tistory.com/107
 
-3. tip!
+3. SVG 파일받은 후 따로 컴포넌트화해서 fill속성 이용하기
+   // pages/SVGicon
+
+4. tip!
    flex-grow : 일정한 비율로 나누기
    width: % 를 사용하고 height는 padding이나 margin을 사용하기
 
