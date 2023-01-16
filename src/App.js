@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { change } from "./pages/state";
 import { useState } from "react";
 import { Postcode } from "./pages/daumAddress";
-import SVGicon from "./pages/SVGicon";
+import { ReactComponent as CancelIcon } from "./assets/icons/cancleIcon.svg";
 
 const Button = styled.button`
   width: 100px;
@@ -30,6 +30,18 @@ const SVGcontainer = styled.button`
   svg {
     fill: blue;
   }
+`;
+
+const Label = styled.label`
+  width: 100%;
+  font-size: 10px;
+  border: 1px solid black;
+`;
+
+const Input = styled.input`
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
 `;
 
 function App() {
@@ -65,8 +77,12 @@ function App() {
       <Overflow>123213qwewqewqewqewqewqewqsadsadsadsadsadsadase</Overflow>
       <Postcode></Postcode>
       <SVGcontainer>
-        <SVGicon />
+        <CancelIcon />
       </SVGcontainer>
+      <Label htmlFor="title" aria-label="나 클릭해봥">
+        나 클릭해봐
+      </Label>
+      <Input id="title" title="인풋창입니다." />
     </>
   );
 }

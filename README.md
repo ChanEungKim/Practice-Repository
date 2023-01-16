@@ -23,9 +23,14 @@ CSS
    //https://happygunja.tistory.com/107
 
 3. SVG 파일받은 후 따로 컴포넌트화해서 fill속성 이용하기
-   // pages/SVGicon
+   // import { ReactComponent as CancelIcon } from "./assets/icons/cancleIcon.svg";
 
-4. tip!
+4. label 태그에 htmlFor 속성 -> input 태그에 id 속성적용 = label누르면 input포커스
+
+5. aria-label: reader에만 읽힌다.
+   title : reader에 읽히고 브라우저 상에서 해당 태그에 마우스 올려놓으면 텍스트형식이 뜬다.
+
+6. tip!
    flex-grow : 일정한 비율로 나누기
    width: % 를 사용하고 height는 padding이나 margin을 사용하기
 
