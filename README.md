@@ -30,7 +30,15 @@ CSS
 5. aria-label: reader에만 읽힌다.
    title : reader에 읽히고 브라우저 상에서 해당 태그에 마우스 올려놓으면 텍스트형식이 뜬다.
 
-6. tip!
+6. input: 높이를 높히면 가운데정렬 되어있고 오른쪽으로 텍스트가 쭉 이어지면서 화면밖으로 나간다.
+   textarea: 높이를 높히면 오른쪽 위에서부터 글이 시작하고 area공간에서만 텍스트가 작성된다.
+
+7. z-index : 더 큰 z-index 값을 가진 요소가 작은 값의 요소 위를 덮는다.
+
+8. transform 내 사용 (translate , scale, rotate)-x축,y축
+   transition: property duration timing-function
+
+9. tip!
    flex-grow : 일정한 비율로 나누기
    width: % 를 사용하고 height는 padding이나 margin을 사용하기
 
@@ -48,3 +56,4 @@ CSS
    https://icons8.com/
    https://simpleicons.org/
    https://iconmonstr.com/shopping-cart-thin-svg/
+   https://www.iconfinder.com/search?q=user
