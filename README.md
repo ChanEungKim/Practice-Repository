@@ -38,9 +38,31 @@ CSS
 8. transform 내 사용 (translate , scale, rotate)-x축,y축
    transition: property duration timing-function
 
-9. tip!
-   flex-grow : 일정한 비율로 나누기
-   width: % 를 사용하고 height는 padding이나 margin을 사용하기
+9. 동일 페이지에서 클릭시 정해진 위치로 이동하기
+   클릭태그: <a태그 href="#top>
+   이동하려는태그: <div태그 id="top">
+
+10. alert
+    if문, window.confirm 활용
+
+11. input type
+    text : 텍스트 입력
+    password : 문자가 별표나 동그라미로 표시
+    submit : form-handler에게 폼을 제출하는 버튼을 정의
+    radio : 동그라미버튼
+    checkbox: 체크박스버튼
+    button : 버튼
+    number : 숫자만 써진다.
+    data : 사용자가 날짜를 포함해야 하는 입력필드 표시
+    range : 슬라이드 컨트롤
+    month : 월과 연도를 선택
+    week : 주와 연도를 선택
+    time : 시간을 선택
+    http://jun.hansung.ac.kr/CWP/htmls/HTML%20Input%20Types.html
+
+12. tip!
+    flex-grow : 일정한 비율로 나누기
+    width: % 를 사용하고 height는 padding이나 margin을 사용하기
 
 ---
 

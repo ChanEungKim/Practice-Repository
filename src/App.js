@@ -12,6 +12,9 @@ import {
   Overflow,
   Button,
   Transform,
+  ClickMove,
+  Div,
+  AlertButton,
 } from "./AppStyle";
 
 function App() {
@@ -19,6 +22,14 @@ function App() {
   const count = useSelector((state) => state.counter.value);
   const state = useSelector((state) => state.states.value);
   const dispatch = useDispatch();
+
+  const AlertMessage = () => {
+    if (window.confirm("정말 삭제합니까?")) {
+      alert("삭제되었습니다");
+    } else {
+      alert("취소합니다");
+    }
+  };
 
   return (
     <>
@@ -44,7 +55,9 @@ function App() {
         }}
       ></Button>
       <input value={data} onChange={(e) => setData(e.target.value)}></input>
-      <Overflow>123213qwewqewqewqewqewqewqsadsadsadsadsadsadase</Overflow>
+      <Overflow id="top">
+        123213qwewqewqewqewqewqewqsadsadsadsadsadsadase
+      </Overflow>
       <Postcode></Postcode>
       <SVGcontainer>
         <CancelIcon />
@@ -52,9 +65,12 @@ function App() {
       <Label htmlFor="title" aria-label="나 클릭해봥">
         나 클릭해봐
       </Label>
-      <Input id="title" title="인풋창입니다." />
+      <Input id="title" title="인풋창입니다." type="time" />
       <textarea></textarea>
       <Transform />
+      <AlertButton onClick={AlertMessage}>AlertButton</AlertButton>
+      <Div />
+      <ClickMove href="#top">Click</ClickMove>
     </>
   );
 }

@@ -52,4 +52,28 @@ const Transform = styled.div`
   }
 `;
 
-export { Input, Label, SVGcontainer, Overflow, Button, Transform };
+const ClickMove = styled.a`
+  border: 1px solid black;
+`;
+
+const Div = styled.div`
+  width: 20px;
+  height: 2000px;
+`;
+const AlertButton = styled.button`
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+`;
+
+export {
+  Input,
+  Label,
+  SVGcontainer,
+  Overflow,
+  Button,
+  Transform,
+  ClickMove,
+  Div,
+  AlertButton,
+};
