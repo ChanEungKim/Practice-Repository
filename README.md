@@ -6,6 +6,7 @@
 4. 회원가입/주소찾기 - react-daum-postcode // pages/daumAddress
    https://postcode.map.daum.net/guide
 5. favicon 변경 - public 파일에 favicon 파일 넣기 (이미지파일 favicon으로 변환해야한다.)
+6. modal 구현
 
 CSS
 
@@ -60,7 +61,10 @@ CSS
     time : 시간을 선택
     http://jun.hansung.ac.kr/CWP/htmls/HTML%20Input%20Types.html
 
-12. tip!
+12. order : 형제요소 중에서 태그 순서바꾸기 (브라우저에서 출력순서만 바꾸기) \*display 줘야한다.
+    ex) order: 1, order:2 // 숫자가 낮을수록 더 먼저 랜더링된다.
+
+13. tip!
     flex-grow : 일정한 비율로 나누기
     width: % 를 사용하고 height는 padding이나 margin을 사용하기
 

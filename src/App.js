@@ -15,6 +15,9 @@ import {
   ClickMove,
   Div,
   AlertButton,
+  OrderBox1,
+  OrderBox2,
+  OrderContainer,
 } from "./AppStyle";
 
 function App() {
@@ -69,6 +72,10 @@ function App() {
       <textarea></textarea>
       <Transform />
       <AlertButton onClick={AlertMessage}>AlertButton</AlertButton>
+      <OrderContainer>
+        <OrderBox1>1111</OrderBox1>
+        <OrderBox2>2222</OrderBox2>
+      </OrderContainer>
       <Div />
       <ClickMove href="#top">Click</ClickMove>
     </>

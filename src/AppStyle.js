@@ -66,6 +66,25 @@ const AlertButton = styled.button`
   border: 1px solid black;
 `;
 
+const OrderContainer = styled.div`
+  display: grid;
+  width: 100%;
+`;
+
+const OrderBox1 = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  order: 2;
+`;
+
+const OrderBox2 = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  order: 1;
+`;
+
 export {
   Input,
   Label,
@@ -76,4 +95,7 @@ export {
   ClickMove,
   Div,
   AlertButton,
+  OrderBox1,
+  OrderBox2,
+  OrderContainer,
 };
