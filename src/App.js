@@ -1,9 +1,9 @@
 import "./AppStyle.js";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrease } from "./pages/counterSlice";
-import { change } from "./pages/state";
+import { increment, decrease } from "./practice/counterSlice";
+import { change } from "./practice/state";
 import { useState } from "react";
-import { Postcode } from "./pages/daumAddress";
+import { Postcode } from "./practice/daumAddress";
 import { ReactComponent as CancelIcon } from "./assets/icons/cancleIcon.svg";
 import {
   Input,
@@ -33,6 +33,9 @@ function App() {
       alert("취소합니다");
     }
   };
+
+  const createdAt = new Date().toLocaleDateString();
+  console.log(createdAt);
 
   return (
     <>

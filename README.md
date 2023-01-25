@@ -1,4 +1,4 @@
-기술스택 or 경험
+기술스택 or React 경험
 
 1. typescript // pages/typescript
 2. Redux-toolkit // pages/state, pages/store
@@ -7,6 +7,10 @@
    https://postcode.map.daum.net/guide
 5. favicon 변경 - public 파일에 favicon 파일 넣기 (이미지파일 favicon으로 변환해야한다.)
 6. modal 구현
+7. useEffect 안에서 API를 받아올 때는 따로 함수를 설정한 후 async와 await를 준다.
+8. 삼항연산자 : Loading ? () : ();
+9. map: data.map((e)=> ());
+10. const date = new Date().toLocaleString(); //현재날짜
 
 CSS
 
