@@ -18,10 +18,14 @@ import {
   OrderBox1,
   OrderBox2,
   OrderContainer,
+  ModalButton,
 } from "./AppStyle";
+import Modal from "./component/modal.js";
 
 function App() {
   const [data, setData] = useState("");
+  const [isModal, setIsModal] = useState(false);
+
   const count = useSelector((state) => state.counter.value);
   const state = useSelector((state) => state.states.value);
   const dispatch = useDispatch();
@@ -32,6 +36,14 @@ function App() {
     } else {
       alert("취소합니다");
     }
+  };
+
+  const ModalOpen = () => {
+    setIsModal(true);
+  };
+
+  const ModalClose = () => {
+    setIsModal(false);
   };
 
   const createdAt = new Date().toLocaleDateString();
@@ -61,24 +73,36 @@ function App() {
         }}
       ></Button>
       <input value={data} onChange={(e) => setData(e.target.value)}></input>
+
       <Overflow id="top">
         123213qwewqewqewqewqewqewqsadsadsadsadsadsadase
       </Overflow>
+
       <Postcode></Postcode>
+
       <SVGcontainer>
         <CancelIcon />
       </SVGcontainer>
+
       <Label htmlFor="title" aria-label="나 클릭해봥">
         나 클릭해봐
       </Label>
       <Input id="title" title="인풋창입니다." type="time" />
+
       <textarea></textarea>
+
       <Transform />
+
       <AlertButton onClick={AlertMessage}>AlertButton</AlertButton>
+
       <OrderContainer>
         <OrderBox1>1111</OrderBox1>
         <OrderBox2>2222</OrderBox2>
       </OrderContainer>
+
+      <ModalButton onClick={ModalOpen}>ModalButton</ModalButton>
+      <Modal ModalClose={ModalClose} isModal={isModal} />
+
       <Div />
       <ClickMove href="#top">Click</ClickMove>
     </>

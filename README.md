@@ -6,7 +6,7 @@
 4. 회원가입/주소찾기 - react-daum-postcode // pages/daumAddress
    https://postcode.map.daum.net/guide
 5. favicon 변경 - public 파일에 favicon 파일 넣기 (이미지파일 favicon으로 변환해야한다.)
-6. modal 구현
+6. modal 구현 - 삼항연산자X , wrapper와 container를 나누고 props로 구현하기 + transition , transform
 7. useEffect 안에서 API를 받아올 때는 따로 함수를 설정한 후 async와 await를 준다.
 8. 삼항연산자 : Loading ? () : ();
 9. map: data.map((e)=> ());

@@ -85,6 +85,37 @@ const OrderBox2 = styled.div`
   order: 1;
 `;
 
+const ModalButton = styled.button`
+  width: 100px;
+  height: 50px;
+  background-color: green;
+`;
+
+const ModalWrapper = styled.div`
+  position: fixed;
+  display: ${(props) => (props.isModal ? "block" : "none")};
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 95;
+`;
+
+const ModalContainer = styled.div`
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 100%;
+  height: 300px;
+  max-width: 435px;
+  background-color: white;
+  z-index: 99;
+  transition: transform 0.5s;
+  transform: translate(0%, 0%)
+    ${(props) => (props.isModal ? "translateY(0)" : "translateY(-200%)")};
+`;
+
 export {
   Input,
   Label,
@@ -98,4 +129,7 @@ export {
   OrderBox1,
   OrderBox2,
   OrderContainer,
+  ModalButton,
+  ModalWrapper,
+  ModalContainer,
 };
