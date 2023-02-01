@@ -12,6 +12,7 @@
 9. map: data.map((e)=> ());
 10. const date = new Date().toLocaleString(); //현재날짜
 11. react-router ( BrowserRouter , Routes , Route / path , element )
+12. ScrollToTop : 버튼을 누르면 맨위로 이동
 
 CSS
 
