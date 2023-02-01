@@ -11,6 +11,7 @@
 8. 삼항연산자 : Loading ? () : ();
 9. map: data.map((e)=> ());
 10. const date = new Date().toLocaleString(); //현재날짜
+11. react-router ( BrowserRouter , Routes , Route / path , element )
 
 CSS
 
