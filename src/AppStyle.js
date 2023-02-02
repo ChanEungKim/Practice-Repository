@@ -116,6 +116,12 @@ const ModalContainer = styled.div`
     ${(props) => (props.isModal ? "translateY(0)" : "translateY(-200%)")};
 `;
 
+const UseNavigate = styled.button`
+  width: 100px;
+  height: 30px;
+  background-color: green;
+`;
+
 export {
   Input,
   Label,
@@ -132,4 +138,5 @@ export {
   ModalButton,
   ModalWrapper,
   ModalContainer,
+  UseNavigate,
 };

@@ -19,8 +19,10 @@ import {
   OrderBox2,
   OrderContainer,
   ModalButton,
+  UseNavigate,
 } from "../AppStyle";
 import Modal from "../component/modal";
+import { useNavigate } from "react-router-dom";
 
 const Page1 = () => {
   const [data, setData] = useState("");
@@ -29,6 +31,7 @@ const Page1 = () => {
   const count = useSelector((state) => state.counter.value);
   const state = useSelector((state) => state.states.value);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const AlertMessage = () => {
     if (window.confirm("정말 삭제합니까?")) {
@@ -44,6 +47,10 @@ const Page1 = () => {
 
   const ModalClose = () => {
     setIsModal(false);
+  };
+
+  const Navigate = () => {
+    navigate("/page2/1");
   };
 
   const createdAt = new Date().toLocaleDateString();
@@ -105,6 +112,7 @@ const Page1 = () => {
 
       <Div />
       <ClickMove href="#top">Click</ClickMove>
+      <UseNavigate onClick={Navigate}>Navigate</UseNavigate>
     </>
   );
 };
