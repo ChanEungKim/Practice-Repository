@@ -36,6 +36,7 @@ const Page1 = () => {
   const AlertMessage = () => {
     if (window.confirm("정말 삭제합니까?")) {
       alert("삭제되었습니다");
+      localStorage.removeItem("key");
     } else {
       alert("취소합니다");
     }
