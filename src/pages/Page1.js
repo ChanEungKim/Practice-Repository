@@ -20,6 +20,7 @@ import {
   OrderContainer,
   ModalButton,
   UseNavigate,
+  LocationButton,
 } from "../AppStyle";
 import Modal from "../component/modal";
 import { useNavigate } from "react-router-dom";
@@ -110,6 +111,13 @@ const Page1 = () => {
 
       <ModalButton onClick={ModalOpen}>ModalButton</ModalButton>
       <Modal ModalClose={ModalClose} isModal={isModal} />
+
+      <LocationButton
+        href="http://localhost:3000/page2/1"
+        // onClick={() => window.location.replace("http://localhost:3000/page2/1")}
+      >
+        LocationButton
+      </LocationButton>
 
       <Div />
       <ClickMove href="#top">Click</ClickMove>

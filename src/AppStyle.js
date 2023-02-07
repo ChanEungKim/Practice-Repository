@@ -122,6 +122,12 @@ const UseNavigate = styled.button`
   background-color: green;
 `;
 
+const LocationButton = styled.a`
+  width: 100px;
+  height: 30px;
+  background-color: skyblue;
+`;
+
 export {
   Input,
   Label,
@@ -139,4 +145,5 @@ export {
   ModalWrapper,
   ModalContainer,
   UseNavigate,
+  LocationButton,
 };

@@ -14,6 +14,12 @@
 11. react-router ( BrowserRouter , Routes , Route / path , element )
 12. ScrollToTop : 버튼을 누르면 맨위로 이동
 13. Local Storage (setItem, getItem, removeItem)
+14. window.location
+    assign() : 위치 개체에 새 값이 할당될 때마다 수정된 URL로 호출된 것처럼 URL을 사용하여 문서가 로드 - href 랑 비슷하지만 좀 느린 대신에 더 안전하다.
+    reload() : 현재 페이지 새로고침
+    href : 호출한 페이지로 이동. 주소히스토리가 남는다. 속성<a href=''> - URL을 이동하는 대부분의 경우에 사용
+    replace() : 기존페이지를 새로운 페이지로 변경시킨다. 주소히스토리가 기록되지 않는다. 매서드.
+    - 뒤로가기로 이전 페이지로 가는 것을 차단하거나, 방문 히스토리를 남기지 않아야 하는 경우에만 사용.
 
 CSS
 
